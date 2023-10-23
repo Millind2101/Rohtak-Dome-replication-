@@ -1,0 +1,160 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/* Global styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Home section styles */
+#home {
+    position: relative;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+#home .absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#home h1 {
+    font-size: 36px;
+    
+}
+
+/* About section styles */
+#about {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+#about h1 {
+    font-size: 48px;
+    text-decoration-color: #C9735B;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* More sections can be added here */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Projects Section Styles */
+#projects {
+    background-color: #f7f7f7; /* Set your background color */
+    padding: 40px 0;
+}
+
+#projects h1 {
+    color: #333; /* Set your heading text color */
+}
+
+#projects p {
+    color: #555; /* Set your paragraph text color */
+}
+
+/* Style project items */
+#projects .w-full.relative {
+    border: 1px solid #ddd; /* Add a border around each project item */
+}
+
+#projects .text-white {
+    background-color: #333; /* Background color for project item title */
+}
+
+#projects img {
+    border-radius: 10px; /* Add border-radius to project images */
+}
+/* Add this CSS to adjust project items within a row */
+.project-row {
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin-right: 2%; /* Adjust as needed for spacing between items */
+    width: calc(22.3333% - 2%); /* Adjust as needed for equal spacing and margin */
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .project-row {
+        justify-content: space-between;
+    }
+
+    .project-item {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 10%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #eee;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+
+/* Media queries for responsive design can be added as needed */
