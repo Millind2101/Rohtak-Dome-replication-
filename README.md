@@ -1,2 +1,2 @@
 # Rohtak-Dome-replication-
-The replication of a website name rohtak dome.
+The Frontend of a website name rohtak dome.
